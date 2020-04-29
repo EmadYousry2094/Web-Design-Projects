@@ -1,0 +1,554 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: arial;  
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+  /*  background-color: #f6f6ef; */
+    overflow: hidden;
+}
+
+
+.headerSec{
+    width: 100%;
+}
+
+/* start nav bar */
+.navBar{
+    color: #fff;
+    font-size: 130%;
+    width: 100%;
+    background-color: #142850d6;
+    transition: all 0.5s ease-in-out;
+    padding: 20px 0px 20px 0px;
+    line-height: 30px;
+}
+
+.nav-small{
+    color: #fff;
+    font-size: 130%;
+    position: fixed;
+    width: 100%;
+    background-color: #142850;
+    transition: all 0.5s ease-in-out;
+    padding: 5px 0px 5px 0px;
+    line-height: 34px;
+}
+
+.navBar .siteLogo, .navBar ul{
+    float: left;
+}
+
+.searchBox{
+    float: right;
+    margin-right: 33px;
+}
+
+.navBar .siteLogo{
+    width: 15%;
+    color: #dae1e7;
+    font-size: 125%;
+}
+
+.navBar .siteLogo span{
+    color: #1562a5;
+}
+.navBar .siteLogo:hover{
+    cursor: pointer;
+}
+
+.navBar ul{
+    width: 50%;
+    list-style: none;
+}
+
+.navBar ul li{
+    float: left;
+    margin-right: 15px;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: #dae1e7;
+}
+
+.navBar ul li a:hover{
+    border-bottom: 2px solid #00a8cc  !important;
+    color: #00a8cc ;
+    
+}
+
+.navBar .searchBox input{
+    border-style: none;
+    background-color: #e5e4ffc7;
+    padding: 5px;
+}
+
+.navBar .searchBox i{
+    background-color: #1f2453;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+}
+
+.navBar .searchBox i:hover {
+    background-color: #27496d ;
+    cursor: pointer;
+}
+
+.fa-search:before {
+    content: "\f002";
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
+
+/* end nav bar */
+
+/* slider pagger */
+.activePagger {
+    background-color: #4354f3 !important;
+}
+
+/* start services */
+
+.services{
+    padding-bottom: 80px;
+    border-bottom: 1px solid #dae1e7;
+}
+
+.services h2{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: #142850;
+}
+
+.services > div{
+    float: left;
+    width: 32.3%;
+    background-color: #dae1e7;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.services > div i{
+    float: left;
+    width: 20%;
+    margin-top: 40px;
+    margin-right: 2%;
+    font-size: 250%;
+    color: #00909e;
+}
+.services .serv{
+    float: left;
+    width: 78%;
+}
+
+.services .serv h3{
+    color: #27496d;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.services .serv h3:hover{
+    cursor: pointer;
+    color: #00909e;
+    margin-top: 15px;
+}
+
+.services .serv p{
+    margin-top: 5px;
+    color: #27496d;
+    margin-bottom: 15px;
+    width: 93%;
+}
+
+/* end services */
+
+
+/* start team */
+
+.team{
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.team > div:first-child{
+    float: left;
+    width: 35%;
+}
+
+.team div:first-child h2{
+    color: #142850;
+    margin-bottom: 18px;
+}
+
+.team div:first-child p{
+    color: #27496d;
+}
+
+
+.team div:not(:first-child){
+    float: right;
+    width: 15%;
+    height: 135px;
+    margin-left: 1%;
+    position: relative;
+}
+
+.team div:not(:first-child) .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    text-align: center;
+    color: transparent;
+    background-color: transparent;
+}
+
+.team div:not(:first-child) .overlay span{
+    line-height: 135px;
+}
+.team div:not(:first-child) .overlay:hover{
+    cursor: pointer;
+    color: #dae1e7;
+    font-size: 120%;
+    background-color: #00909ea3;
+}
+
+.team div:not(:first-child) img{
+    width: 100%;
+    height: 100%;
+}
+
+/* end team */
+
+
+
+/* start testimonial */
+
+.testimonials{
+
+    text-align: center;
+    background-image: url('../img/test4.jpg');
+    background-size: cover;
+    position: relative;
+    height: 265px;
+  
+}
+
+
+
+.testimonials h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #142850;
+    font-size: 190%;
+    
+}
+
+
+.testimonials q{
+    position: absolute;
+    width: 75%;
+    display: block;
+    color: #142850;
+    font-size: 110%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonials span{
+    position: absolute;
+    top: 180px;
+    width: 75%;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block;
+    color: #27496d;
+    font-size: 130%;  
+}
+/* end testimonial */
+
+
+
+/* start projects */
+
+
+
+.projects{
+    height: 595px;
+    margin-bottom: 80px;
+}
+
+.projects h2{
+    color: #142850;
+    margin-top: 80px;
+}
+.projects .control{
+    height: 28px;
+    margin: 40px 0px;
+}
+
+.projects .control ul{
+    list-style: none;
+    margin-left: 5px;
+}
+
+.projects .control ul li{
+    padding: 5px;
+    float: left;
+    width: 65px;
+    text-align: center;
+    margin-right: 10px;
+    color: #27496d;
+    background-color: #dae1e7;
+
+}
+
+.projects .control ul li:hover{
+    cursor: pointer;
+    color: #00909e;
+    box-shadow: 1px 1px 5px #27496d,
+                -1px -1px 5px #27496d;
+}
+
+.projects .mixContainer .mix{
+    float: left;
+    width: 32.33%;
+    height: 170px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    color: #00909e;
+
+}
+
+
+
+.projects .mixContainer .mix div{
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    z-index: 2;
+}
+
+.projects .mixContainer .mix div:hover{
+    cursor: pointer;
+    color: #dae1e7;
+    background-color: #00909ea3;
+}
+
+/*
+.projects .mixContainer .mix .overlay:hover{
+    cursor: pointer;
+    display: block;
+    background-color: #dae1e7c2;
+
+}
+*/
+.fa-heart:before {
+    content: "\f004";
+    position: absolute;
+    bottom: 12px;
+    right: 35px;
+    font-size: 110%;
+}
+
+.projects .mixContainer .mix span{
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    font-size: 110%;
+}
+.projects .mixContainer .mix img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* end gallary */
+
+/* start footer */
+
+.footer{
+    background-color: #142850;
+}
+
+
+.footer .container > div {
+    float: left;
+    width: 25%;
+    margin-top: 80px;
+}
+
+.footer .about h3{
+    color: #dae1e7;
+}
+
+.footer .about p:first-of-type{
+    color: #00909e;
+    margin-top: 30px;
+    width: 95%;
+}
+
+.footer .about div{
+    margin-top: 30px;
+}
+
+.footer .about div i{
+    color: #00909e;
+    width: 20%;
+    padding: 10px 5px;
+    margin-left: 5px;
+    border: 1px solid #00909e;
+}
+
+.footer .about div i:hover{
+    cursor: pointer;
+    color: #dae1e7;
+    box-shadow: 0 0 5px #cecece;
+}
+
+.footer .about p:last-of-type{
+    color: #00909e;
+    margin: 80px 0px;
+}
+
+.footer .tags h3{
+    color: #dae1e7;
+    margin-bottom: 20px;
+} 
+
+.footer .tags span{
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: #00909e;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #00909e;
+} 
+
+.footer .tags span:hover{
+    cursor: pointer;
+    color: #dae1e7;
+    box-shadow: 0 0 5px #cecece;
+}
+
+.footer .posts h3{
+    color: #dae1e7;
+    margin-bottom: 30px;
+}
+
+.footer .posts > div{
+    height: 50px;
+    margin-bottom: 10px; 
+}
+
+.footer .posts > div div:first-of-type{
+    width: 25%;
+    height: 100%;
+    margin-right: 5%;
+    float: left;
+}
+
+.footer .posts > div div:last-of-type{
+    width: 70%;
+    float: left;
+}
+
+.footer .posts > div div:first-of-type img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer .posts > div div:last-of-type h4{
+    color: #dae1e7;
+}
+
+.footer .posts > div div:last-of-type span{
+    color: #00909e;
+}
+
+.footer .posts > div div:first-of-type img:hover{
+    cursor: pointer;
+}
+
+.footer .posts > div div:last-of-type h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer .blog h3{
+    color: #dae1e7;
+    margin-bottom: 30px;
+}
+
+.footer .blog div{
+    color: #00909e;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00909e;
+}
+
+.footer .blog div:hover{
+    cursor: pointer;
+    color: #dae1e7;
+}
+
+/* end footer */
+
+
+
+
+
+/* frame work */
+
+.clearFix{
+    clear: both;
+}
+
+.active{
+    color: #00a8cc !important;
+}
+
+.projectsOverlay{
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    cursor: pointer;
+    background-color: #dae1e7c2;
+}
+
+
+
+
